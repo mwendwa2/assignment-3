@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfriGadget Hub - Quality Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            margin: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .product-img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        .form-section {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .radio-option, .checkbox-option {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            margin-right: 15px;
+        }
+        .checkbox-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+        }
+        .submit-btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+        .price {
+            font-weight: bold;
+            color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://via.placeholder.com/80" alt="AfriGadget Hub Logo" class="logo">
+            <h1>AfriGadget Hub</h1>
+        </div>
+
+        <h2>Our Products</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Image</th>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Price (KSH)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 1" class="product-img"></td>
+                    <td>AFG001</td>
+                    <td>Wireless Earbuds</td>
+                    <td class="price">6,299</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 2" class="product-img"></td>
+                    <td>AFG002</td>
+                    <td>Smart Watch</td>
+                    <td class="price">12,499</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 3" class="product-img"></td>
+                    <td>AFG003</td>
+                    <td>Bluetooth Speaker</td>
+                    <td class="price">4,499</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 4" class="product-img"></td>
+                    <td>AFG004</td>
+                    <td>Power Bank 10000mAh</td>
+                    <td class="price">3,599</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 5" class="product-img"></td>
+                    <td>AFG005</td>
+                    <td>USB-C Cable</td>
+                    <td class="price">1,249</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 6" class="product-img"></td>
+                    <td>AFG006</td>
+                    <td>Wireless Charger</td>
+                    <td class="price">2,799</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 7" class="product-img"></td>
+                    <td>AFG007</td>
+                    <td>Phone Stand</td>
+                    <td class="price">849</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 8" class="product-img"></td>
+                    <td>AFG008</td>
+                    <td>Screen Protector</td>
+                    <td class="price">1,049</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 9" class="product-img"></td>
+                    <td>AFG009</td>
+                    <td>Laptop Sleeve</td>
+                    <td class="price">2,249</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 10" class="product-img"></td>
+                    <td>AFG010</td>
+                    <td>External Hard Drive 1TB</td>
+                    <td class="price">8,399</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 11" class="product-img"></td>
+                    <td>AFG011</td>
+                    <td>Mechanical Keyboard</td>
+                    <td class="price">6,999</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 12" class="product-img"></td>
+                    <td>AFG012</td>
+                    <td>Gaming Mouse</td>
+                    <td class="price">4,199</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 13" class="product-img"></td>
+                    <td>AFG013</td>
+                    <td>Webcam HD</td>
+                    <td class="price">5,599</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 14" class="product-img"></td>
+                    <td>AFG014</td>
+                    <td>Ring Light</td>
+                    <td class="price">3,499</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 15" class="product-img"></td>
+                    <td>AFG015</td>
+                    <td>Selfie Stick</td>
+                    <td class="price">1,799</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 16" class="product-img"></td>
+                    <td>AFG016</td>
+                    <td>Tripod Stand</td>
+                    <td class="price">2,649</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 17" class="product-img"></td>
+                    <td>AFG017</td>
+                    <td>Smart Bulb</td>
+                    <td class="price">2,099</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 18" class="product-img"></td>
+                    <td>AFG018</td>
+                    <td>Smart Plug</td>
+                    <td class="price">2,399</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 19" class="product-img"></td>
+                    <td>AFG019</td>
+                    <td>Fitness Tracker</td>
+                    <td class="price">4,899</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 20" class="product-img"></td>
+                    <td>AFG020</td>
+                    <td>VR Headset</td>
+                    <td class="price">4,199</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 21" class="product-img"></td>
+                    <td>AFG021</td>
+                    <td>Portable SSD 500GB</td>
+                    <td class="price">11,199</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 22" class="product-img"></td>
+                    <td>AFG022</td>
+                    <td>Noise Cancelling Headphones</td>
+                    <td class="price">13,999</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 23" class="product-img"></td>
+                    <td>AFG023</td>
+                    <td>Wireless Mouse</td>
+                    <td class="price">2,799</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 24" class="product-img"></td>
+                    <td>AFG024</td>
+                    <td>Laptop Cooling Pad</td>
+                    <td class="price">3,199</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 25" class="product-img"></td>
+                    <td>AFG025</td>
+                    <td>USB Hub</td>
+                    <td class="price">1,799</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 26" class="product-img"></td>
+                    <td>AFG026</td>
+                    <td>HDMI Cable</td>
+                    <td class="price">1,399</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 27" class="product-img"></td>
+                    <td>AFG027</td>
+                    <td>Car Phone Holder</td>
+                    <td class="price">1,549</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 28" class="product-img"></td>
+                    <td>AFG028</td>
+                    <td>Desk Organizer</td>
+                    <td class="price">2,099</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 29" class="product-img"></td>
+                    <td>AFG029</td>
+                    <td>Wireless Presenter</td>
+                    <td class="price">3,499</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 30" class="product-img"></td>
+                    <td>AFG030</td>
+                    <td>Bluetooth Receiver</td>
+                    <td class="price">2,249</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 31" class="product-img"></td>
+                    <td>AFG031</td>
+                    <td>USB Microphone</td>
+                    <td class="price">5,599</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="Product 32" class="product-img"></td>
+                    <td>AFG032</td>
+                    <td>Phone Lens Kit</td>
+                    <td class="price">2,799</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="form-section">
+            <h2>Customer Registration</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tel">Telephone Number:</label>
+                    <input type="tel" id="tel" name="tel" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="male" name="gender" value="male" checked>
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="country">Country of Birth:</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select an African country</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Ghana">Ghana</option>
+                        <option value="Ethiopia">Ethiopia</option>
+                        <option value="Morocco">Morocco</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Sudan">Sudan</option>
+                        <option value="Angola">Angola</option>
+                        <option value="Mozambique">Mozambique</option>
+                        <option value="Cameroon">Cameroon</option>
+                        <option value="Cote d'Ivoire">Côte d'Ivoire</option>
+                        <option value="Zambia">Zambia</option>
+                        <option value="Senegal">Senegal</option>
+                        <option value="Tunisia">Tunisia</option>
+                        <option value="Zimbabwe">Zimbabwe</option>
+                        <option value="Rwanda">Rwanda</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Product Categories of Interest:</label>
+                    <div class="checkbox-container">
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="electronics" name="category" value="electronics">
+                            <label for="electronics">Electronics</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="computing" name="category" value="computing">
+                            <label for="computing">Computing</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="audio" name="category" value="audio">
+                            <label for="audio">Audio Devices</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="smart_home" name="category" value="smart_home">
+                            <label for="smart_home">Smart Home</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="accessories" name="category" value="accessories">
+                            <label for="accessories">Accessories</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="mobile" name="category" value="mobile">
+                            <label for="mobile">Mobile Devices</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="photography" name="category" value="photography">
+                            <label for="photography">Photography</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="gaming" name="category" value="gaming">
+                            <label for="gaming">Gaming</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="storage" name="category" value="storage">
+                            <label for="storage">Storage</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="networking" name="category" value="networking">
+                            <label for="networking">Networking</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
